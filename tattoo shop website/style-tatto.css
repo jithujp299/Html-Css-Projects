@@ -1,0 +1,59 @@
+
+
+.navbar-nav{
+    
+    position: absolute;
+    left: 130px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    
+
+}
+.navbar-brand{
+    margin-left: 100px;
+    font-size: 660px;
+}
+.carousel-inner{
+    padding: 50px 100px;
+    width:50%;
+    height: 100vh;
+}
+.carousel-caption{
+    position: absolute;
+    top:120px;
+
+    max-width: 480px;
+   
+}
+.carousel-inner .carousel-caption h1{
+    font-size: 55px;
+    text-decoration: none;
+}
+.carousel-inner .carousel-caption p{
+    font-size: 15px;
+}
+.section-padding{
+    padding: 100px 0;
+}
+ .footer{
+    list-style: none;
+    text-decoration: none;
+   color: black;
+    line-height: 40px;
+    text-decoration: none;
+
+ }
+ .image-1{
+    width: 400px;
+    height: 300px;
+ }
+ .image-3{
+    width:100px;
+    height: 100px;
+ }
+ footer{
+    display: flex;
+   
+    justify-content: space-between;
+ }

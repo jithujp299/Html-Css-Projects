@@ -1,0 +1,332 @@
+body{
+    background: black;
+    color:white;
+}
+.container1{
+    
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size:cover;
+    background-position: center;
+}
+nav{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:30px 170px;
+    
+   
+}
+.logo{
+    width:130px;
+}
+nav button{
+    background:red;
+    color:white;
+    border:0;
+    outline:0;
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+.english{ 
+    
+    display:inline-flex;
+    align-items: center;
+    background: transparent;
+   padding: 6px 7px;;
+    border:1px solid white;
+}
+.english img{
+ margin-left:12px;
+ width: 10px;
+}
+.head1{
+    
+   position: absolute;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   margin-top: 90px;
+   
+}
+.head1 h1{
+    
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    width:2000px;
+   
+   
+}
+.head1 h3{
+
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 15px;
+}
+form{ 
+    width: 600px;
+    background: white;
+    border-radius: 14px;
+    display:flex;
+    
+   margin-left: 700px;
+    margin-top: 60px;
+    overflow: hidden;
+   
+   
+}
+form input{
+    border:0;
+    outline: 0;
+    flex:1;
+    
+    
+    
+   
+    
+}
+form button{
+   
+    background: red;
+    border:0;
+    outline:0;
+    padding: 23px;
+    color:white;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*------features----------*/
+
+.rows{
+    border-top: 6px solid #303030;
+    display: flex;
+    align-items: centre;
+    width: 100%;
+    flex-wrap:wrap;
+    padding: 50px 0;
+}
+.text-col{ 
+    padding: 150px 0;
+    flex-basis:50%;
+    margin-bottom:20px;
+}
+.image-col{
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+.image-col img{
+    display: block;
+    width:90%;
+    margin: auto;
+}
+.text-col h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.text-col p{
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+/*-------------------features-----------------*/
+
+
+.faq{
+    border-top: 6px solid #303030;
+     padding:10px 12%;
+     font-size: 38px;
+     text-align: center;   
+ }
+.faq h1{
+    font-weight: 500;
+    font-size:50px;
+}
+.accordion{
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    background: #303030;
+    font-size: 22px;
+    padding:18px;
+    position: relative;
+    margin-bottom: 2px;
+    cursor: pointer;
+    
+}
+input[type="radio"]{
+    display:none;
+}
+.accordion .content{
+    font-size: 18px;
+    background-color: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition:max-height .5s,padding .5s;
+}
+ label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: .7s;
+}
+.accordion input[type="radio"]:checked + label  + .content{
+    max-height: 600px;
+    padding:30px 20px;
+}
+.accordion input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.faq .emailsignup{
+    
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 16px;
+}
+/*------------------------footer------------------*/
+
+.footer{
+    color: #777;
+    padding: 50px 15% 10px;
+    border-top:6px solid #303030;
+}
+.footer p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom:30px;
+}
+.footer .rows1{
+    display: flex;
+    padding:10px 0;
+}
+.footer .colum{
+   
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom:20px;
+}
+.footer .colum a{
+    display: block;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    color: #777;
+
+}
+.footer .english{
+   margin-top: 20px;
+    color:white;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.copyright{
+   
+    font-size: 6px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------------miniscreen---------------------*/
+
+  @media only screen and (max-width:600px){
+
+    .logo{
+        width:100px;
+        height: 30px;
+       position: relative;
+       right: 8rem;
+    }
+    .div-1{
+          display: flex;
+         column-gap: 8px;
+         
+    }
+    .div-1 button{
+       padding: 5px 6px;
+       gap: 2px;
+      
+       
+    }
+    .head1 h1{
+        font-size: 30px;
+    }
+    .head1 h3{
+        font-size: 16px;
+    }
+    form
+     {
+        height: 60px;
+         width:400px;
+         position: relative;
+         left:6rem
+    }
+    .rows:nth-child(1),.rows:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .image-col, .text-col{
+        flex-basis: 100%;
+       
+    }
+    .text-col h2{
+        font-size: 35px;
+    }
+    .text-col p{
+        font-size: 20px;
+    }
+    .faq{
+        margin-right: 40px;
+    }
+    .faq h1{
+        font-size: 30px;
+    }
+    .faq p{
+        font-size: 15px;
+    }
+    .accordion li label{
+           font-size: 20px;
+    }
+    .emailsignup{
+        width: 25rem;
+        height: 55px;
+        position: relative;
+        left: 25px;
+        
+        
+    }
+    .footer p{
+        font-size: 15px;
+    }
+    .footer .colum a{
+        font-size: 13px;
+    }
+    .footer .english {
+       padding: 5px 6px;
+    }
+   
+  }
